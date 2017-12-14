@@ -12,7 +12,7 @@ body {
   touch-action: none;
   position: fixed;
   z-index: 1000000000;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: #ddd 0 0 10px;
   width: 500px;
   height: 536px;
@@ -147,28 +147,30 @@ ul {
   padding: 0;
   width: 10px;
   height: 10px;
+  top:38%;
   position: absolute;
+  border-radius: 5px;
 }
-
+.item-tip.error{
+  background: url(images/chaticon.png) -222px -60px no-repeat;
+}
 .item-tip-left {
-  top: 14px;
   right: -15px;
 }
 
 .item-tip-right {
   left: -15px;
-  top: 14px;
 }
 
 .item-time {
   margin: 0;
-  padding: 2px 0 0 80px;
+  padding: 2px 0 0 65px;
   color: #a7a7a7;
   clear: both;
 }
 .item-time-right{
   text-align: right;
-  padding: 0 80px 4px 0;
+  padding: 0 75px 4px 0;
 }
 
 .bulges {
@@ -204,13 +206,15 @@ ul {
 
 .inputbox {
   margin: 0;
-  padding: 10px;
+  padding: 5px 0;
   width: 480px;
   height: 100px;
   overflow: auto;
   font-size: 12px;
   resize: none;
+  /*border: 1px solid #ddd;*/
   border: 0;
+  outline: 0;
 }
 
 .btn-box {
